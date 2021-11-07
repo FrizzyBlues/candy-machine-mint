@@ -1,43 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- test
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Crazy Beast NFT Collection</title>	<!-- site title -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="themetum Team" />
+	<!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+	<!-- CSS File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/boxicons.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/splitting-cells.css">
+  <link rel="stylesheet" href="css/splitting.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  	<!-- End CSS File -->
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader-wrapper">
+			<div class="spinner"></div>
+		</div>
+	</div>
+	<!-- Preloader-end --> 
+	
+<div class="mim_tm_all_wrap" data-magic-cursor="" data-color="crimson">	<!-- Mouse Animation -->
+  
+	<header id="header-area" class="header-transparent sticky">	<!-- start header -->	
+			<div class="mobile_menubar">
+				<i class='bx bx-menu'></i>
+			</div>			
+			<div class="main-menu-area">	<!-- Main Menu Area -->
+				<div class="container container-main-menu">	<!-- Container -->
+					<div class="main-menu d-flex align-items-center">
+						<div class="logo">	<!-- Logo -->
+							<a href="index.html" class="navbar-brand">
+								<img src="img/logo.png" alt="logo">
+							</a>
+						</div>	<!-- End Logo -->
+						<div class="menu ml-auto d-flex">
+							<nav class="navigation" id="mobile-menu">
+								<ul class="menu-list list-style-none mb-0">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="faqs.html">FAQ</a></li>
+									<li><a href="roadmap.html">Roadmap</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="index.html">MINT</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Responsive Menu -->
+						<div class="mobile-menu mobile-menu-preview"></div>
+					</div>
+					<div class="main-menu-icon">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</div> <!-- responsive menu icon -->
+				</div> <!-- end container -->
+			</div>	<!-- end main menu area -->
+	</header>	<!-- end header -->
+	
+	<div class="dark-bg-all"><!-- start dark bg area -->
+		<div class="product_area pt-100"><!-- start product area -->
+			<div class="container item-details-container"><!-- start container -->
+				<div class="row"><!-- start row -->
+					<div class="col-md-6 col-sm-12"><!-- start col-6 -->					
+						<div class="single_product_detail mb-30">
+							<div class="product_details">
+								<div class="product_description pt-20">
+									<h2 data-splitting class="product_title wow fadeInUp" data-wow-duration=".003s" data-wow-delay=".003s">A Crazy Beast NFT Collection</h2>
+									<p class="product_text">
+										This is a placeholder for description index with root
+										<br /> <br /> 
+										Some more description <br />
+										A little more description
+									</p>
+								</div>
+							</div>
+							<div id="root"></div>	
+						</div>
+					</div><!-- End  col-6 -->				
+					<div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-6 -->
+						<div class="single_product item-details pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<div class="theme_preview_link">
+									<img src="img/portfolio/0.png" alt="" class="responsive-fluid" />						
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-6-->
+				</div><!-- End  row -->
+			</div><!-- End  container -->
+		</div><!-- End  product area -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+		<div class="product_categories dark-bg-all pt-100 pb-150"><!-- start explores -->
+			<div class="container"><!-- start container -->
+				<div class="row"><!-- start row -->
+					<div class="col-md-6 col-sm-12 pb-10"><!-- start col-6 -->
+						<div data-splitting class="section_intro wow fadeInUp" data-wow-duration=".003s" data-wow-delay=".003s">
+							<p>More</p>
+							<h2 class="section_heading">Cray beasts</h2>
+						</div>
+					</div><!-- end col-6 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+			<div class="container pb-30"><!-- start container -->
+				<div class="row"> <!-- start row -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/2.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#0</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/2.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#1</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/2.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#2</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+				</div> <!-- end row -->
+				<div class="row"> <!-- start row -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/4.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#3</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/4.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#4</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/4.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#5</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4 -->
+				</div> <!-- end row -->
+				<div class="row"> <!-- start row -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/1.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#6</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4-->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/1.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#7</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4-->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<div class="single_product_img">						
+								<a href="product.html" class="theme_preview_link">
+									<img src="img/portfolio/1.jpg" alt="" class="responsive-fluid" />						
+								</a>
+							</div>
+							<div class="nft_product_description">
+								<div class="nft_product_text">
+									<a class="product-title" href="#">
+										<p class="product_title_intro">ACrazyBeast#8</p>	
+									</a>
+								</div>
+							</div>
+						</div> <!-- End Single Product -->
+					</div> <!-- End col-4-->
+				</div> <!-- end row -->	
+				<div class="row"> <!-- start row -->
+					<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+						<div class="single_product mt-50 pb-30"> <!-- Single Product -->
+							<a class="product-title" href="#">
+								<p class="product_title_intro">And many more . . . ! ! ! </p>	
+							</a>
+						</div>
+					</div>
+				</div> <!-- end row -->	
+			</div> <!-- end container -->
+		</div> <!-- end explores -->	
+	</div><!-- End dark bg area -->	
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+	<footer id="footer_area" class="footer_area_bg">
+		<div class="container pt-50"> <!-- start container -->
+			<div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"> <!-- start row -->
+				<div class="col-md-2 col-sm-6"> <!-- col-2 footer logo -->
+					<div class="footer_logo">
+						<a href="index.html"><img src="img/favicon.ico" alt="" class="responsive-fluid" /></a>
+					</div>
+				</div> <!-- end col-2 footer logo -->
+				<div class="col-md-7  col-sm-12"> <!-- col-3 footer copyright -->
+					<div class="footer_copyright">
+						<p class="copyright_text text-center">All right reserved & designed by <span><a href="#">ACrazyBeast</a></span></p>
+					</div>
+				</div>
+				<div class="col-md-2  col-sm-6"><!-- col-3 footer payment -->
+					<div class="social_profile">
+						<a href="https://twitter.com/ACrazyBeast" class="social_profile_link"><i class='bx bxl-twitter' ></i></a>
+						<a href="https://discord.gg/DCUqdt235K" class="social_profile_link"><i class='bx bxl-discord' ></i></a>
+					</div>
+				</div> <!-- end col-3 -->
+				<!-- end col-3 footer copyright -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer><!-- end footer area -->
+	<!-- Back to Top
+	============================================= --> 
+	<a id="back-to-top" class="rounded-circle" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)">
+		<i class='bx bxs-chevron-up'></i>
+	</a> 
+	
+	<!-- CURSOR -->
+	<div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+	<!-- /CURSOR -->	
+</div>	<!-- Mouse Cursor Animation End --> 	
+	
+  <!-- Start JS File -->	
+  <script src="js/modernizr-3.8.0.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script> 
+  <script src="js/wow.js"></script>  
+  <script src="js/splitting-animation.js"></script>
+  <script src="js/splitting.min.js"></script>
+  <script src="js/multi-countdown.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/main.js"></script>
+   <!-- End JS File --> 
+</body>
+
+</html>	
