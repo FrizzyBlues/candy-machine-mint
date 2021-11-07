@@ -202,6 +202,7 @@ const Home = (props: HomeProps) => {
       <div style={{
         display: "flex", 
         justifyContent: "space-between"}}>
+        <Button>{wallet && <p>SOL Balance: {(balance || 0).toLocaleString()}</p>}</Button>
         <Button>{wallet && (
           <p>Total Supply: {itemsAvailable}</p>
         )}</Button>
@@ -213,7 +214,6 @@ const Home = (props: HomeProps) => {
           <p>Remaining: {itemsRemaining}</p>
         )}</Button>
       </div>
-      <div>{wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}</div>
 
       <Snackbar
         open={alertState.open}
