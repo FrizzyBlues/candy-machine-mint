@@ -213,6 +213,7 @@ const Home = (props: HomeProps) => {
           <p>Remaining: {itemsRemaining}</p>
         )}</Button>
       </div>
+      <div>{wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}</div>
 
       <Snackbar
         open={alertState.open}
