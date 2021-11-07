@@ -167,22 +167,14 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
-      )}
-
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
-
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
-
-      <MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) : (
+      <div style={{
+        display: "flex", 
+        justifyContent: "space-between"}}>
+        <ConnectButton>{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
+        {wallet && (
+          <Button>{shortenAddress(wallet.publicKey.toBase58() || "")}</Button>
+        )}
+        <MintContainer>
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
@@ -205,8 +197,22 @@ const Home = (props: HomeProps) => {
               />
             )}
           </MintButton>
-        )}
-      </MintContainer>
+        </MintContainer>
+      </div>
+      <div style={{
+        display: "flex", 
+        justifyContent: "space-between"}}>
+        <Button>{wallet && (
+          <p>Total Supply: {itemsAvailable}</p>
+        )}</Button>
+        <Button>{wallet && (
+          <p>Redeemed: {itemsRedeemed}</p>
+        )}</Button> 
+        
+        <Button>{wallet && (
+          <p>Remaining: {itemsRemaining}</p>
+        )}</Button>
+      </div>
 
       <Snackbar
         open={alertState.open}
