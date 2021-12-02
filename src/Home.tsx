@@ -186,7 +186,7 @@ const Home = (props: HomeProps) => {
               isMinting ? (
                 <CircularProgress />
               ) : (
-                "MINT"
+                "MINT for 0.X SOL"
               )
             ) : (
               <Countdown
