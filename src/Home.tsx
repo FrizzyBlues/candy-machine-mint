@@ -206,9 +206,9 @@ const Home = (props: HomeProps) => {
         <Button>{wallet && (
           <p>Total Supply: {itemsAvailable}</p>
         )}</Button>
-        {/* <Button>{wallet && (
+        <Button>{wallet && (
           <p>Redeemed: {itemsRedeemed}</p>
-        )}</Button>  */}
+        )}</Button> 
         
         <Button>{wallet && (
           <p>Remaining: {itemsRemaining}</p>
