@@ -186,7 +186,7 @@ const Home = (props: HomeProps) => {
               isMinting ? (
                 <CircularProgress />
               ) : (
-                "MINT"
+                "SOLD OUT"
               )
             ) : (
               <Countdown
