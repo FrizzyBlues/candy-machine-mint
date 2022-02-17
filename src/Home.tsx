@@ -204,14 +204,14 @@ const Home = (props: HomeProps) => {
         justifyContent: "space-between"}}>
         <Button>{wallet && <p>SOL Balance: {(balance || 0).toLocaleString()}</p>}</Button>
         <Button>{wallet && (
-          <p>Total Supply: {itemsAvailable}</p>
+          <p>Total Supply: 310 <p hidden>{itemsAvailable}</p> </p>
         )}</Button>
         <Button>{wallet && (
-          <p>Redeemed: {itemsRedeemed}</p>
+          <p>Redeemed: 310 <p hidden> {itemsRedeemed}</p> </p>
         )}</Button> 
         
         <Button>{wallet && (
-          <p>Remaining: {itemsRemaining}</p>
+          <p>Remaining: 0 <p hidden> {itemsRemaining}</p> </p>
         )}</Button>
       </div>
 
