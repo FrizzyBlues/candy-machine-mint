@@ -77,7 +77,7 @@ const Home = (props: HomeProps) => {
       setItemsRemaining(itemsRemaining);
       setItemsRedeemed(itemsRedeemed);
 
-      setIsSoldOut(itemsRemaining === 0);
+      setIsSoldOut(0 === 0);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
     })();
